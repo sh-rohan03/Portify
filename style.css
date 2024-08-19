@@ -1,0 +1,381 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background: url(img/bg3.jpg) no-repeat center center/cover;
+    height: 100vh;
+    width: 100vw;
+}
+.navbar{
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+
+}
+.navbar ul li a{
+    color: black;
+}
+.navbar ul li a:hover{
+    color: rgb(255, 255, 255);
+}
+#Home{
+    display: flex;
+    /* margin: 40px 0px; */
+    margin-top: 40px;
+    height: 100vh;
+    width: 100vw;
+    
+}
+.left{
+    margin-top: 50px;
+    margin-left: 50px;
+    height: 300px;
+    width: 630px;
+}
+.left h1{
+    font-size: 2.5rem;
+    color: rgb(0, 0, 0);
+}
+.left h2{
+    font-size: 1.5rem;
+    color: rgb(0, 0, 0);
+}
+.left h1 span{
+    font-weight: bolder;
+    font-size: 3rem;
+    color: rgb(177, 177, 166);
+}
+.left b{
+    font-size: 3rem;
+}
+.right{
+margin-left: 210px;
+margin-top: 20px;
+}
+.right img{
+    border: 2px solid rgb(235, 235, 11);
+    height: 300px;
+    width: 280px;
+    border-radius: 30px;
+    box-shadow: 1px 1px 7px rgb(148, 147, 147);
+}
+.right img:hover{
+    box-shadow: 3px 3px 20px burlywood;
+    transition: .3s;
+}
+.btn1{
+    border: 2px solid rgb(0, 0, 0);
+    margin: 10px 10px;
+    border-radius: 20px;
+    padding: 6px 10px;
+    background-color: transparent;
+    color: rgb(0, 0, 0);
+    position: relative;
+    overflow: hidden;
+    transition: all 0.5s;
+}
+.btn1:hover{
+    background-color: black;
+    border: 2px solid black;
+    color: whitesmoke;
+}
+
+.btn2{
+    border: 2px solid rgb(0, 0, 0);
+    margin: 10px 10px;
+    border-radius: 20px;
+    padding: 6px 10px;
+    background-color: transparent;
+    color: rgb(0, 0, 0);
+    position: relative;
+    overflow: hidden;
+    transition: all 0.5s;
+}
+.btn2:hover{
+    background-color: black;
+    border: 2px solid black;
+    color: whitesmoke;
+}
+.navbar-end a{
+    border: 2px solid rgb(0, 0, 0);
+    margin: 10px 10px;
+    border-radius: 25px;
+    padding: 4px 10px;
+    background-color: transparent;
+    color: rgb(0, 0, 0);
+    position: relative;
+    overflow: hidden;
+    transition: all 0.5s;
+}
+.navbar-end a:hover{
+    background-color: black;
+    border: 2px solid black;
+    color: whitesmoke;
+}
+.div1{
+    border: 2px solid rgb(148, 147, 147);
+    height: 350px;
+    width: 330px;
+    /* border-radius: 30px; */
+    padding: 11px 8px;
+}
+.div2{
+    border: 2px solid rgb(148, 147, 147);
+    height: 324px;
+    width: 310px;
+    /* border-radius: 30px; */
+    padding: 11px 11px;
+}
+#about{
+    background-color: rgb(255, 221, 27);
+    height: 100vh;
+    width: 100vw;
+    margin-top: -124px;
+}
+.abt{
+    font-size: 3rem;
+    font-weight: bolder;
+    margin-top: -88px;
+}
+#me2{
+    margin-top: -75px;
+    margin-left: 30px;
+}
+.line{
+    height: 50px;
+    width: 1px;
+    background-color: black;
+    margin-top: -20px;
+    margin-left: -10px;
+    margin-bottom: 26px;
+}
+#details .mail{
+    margin: 10px 10px;
+}
+#details .dob{
+    margin: 10px 10px;
+}
+#details .address{
+    margin: 10px 10px;
+}
+.mail-icon p{
+    margin-top: -4px;
+    margin-left: 4px;
+}
+.mail hr{
+    width: 82px;
+    margin-left: 63px;
+}
+.dob-icon p{
+    margin-top: -4px;
+    margin-left: 4px;
+}
+.dob hr{
+    width: 121px;
+    margin-left: 11px;
+}
+.address p{
+    margin-top: -4px;
+    margin-left: 4px;
+}
+.address hr{
+    width: 82px;
+    margin-left: 61px;
+    margin-bottom: 5px;
+    background-color: black;
+    color: black;
+}
+#Skills{
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(213, 213, 213);
+    /* margin-left: 20%; */
+    text-align: center;
+}
+.text{
+    /* margin-left: 140px; */
+
+}
+.text h1{
+    font-size: 2.5rem;
+    font-weight: bolder;
+    padding-top: 50px;
+    color: black;
+}
+.text p{
+    color: black;
+}
+.text hr{
+    width: 100px;
+}
+hr{
+    color: black;
+    background-color: black;
+    border: 1px solid black;
+}
+.bar{
+    margin-left: 255px;
+}
+.bar .html5{
+    margin-left: 140px;
+    margin-top: 30px;
+}
+.bar .css3{
+    margin-left: 140px;
+    margin-top: 30px;
+}
+.bar .tailwind{
+    margin-left: 140px;
+    margin-top: 30px;
+}
+.bar .ms-office{
+    margin-left: 140px;
+    margin-top: 30px;
+}
+.bar .wordpress{
+    margin-left: 140px;
+    margin-top: 30px;
+}
+#exp{
+    height: 100vh;
+    width: 100vw;
+    padding-top: 60px;
+    padding-left: 50px;
+    background-color: rgb(255, 221, 27);
+}
+#exp .text2 h1{
+    font-size: 3rem;
+    font-weight: bolder;
+    color: black;
+}
+#exp .text2 p{
+    font-size: 1.3rem;
+    color: black;
+}
+.exp-details{
+    color: black;
+    margin-top: 50px;
+}
+.exp-details p{
+    font-size: 1.2rem;
+
+}
+.exp-details h1{
+    font-size: 2rem;
+    font-weight: bold;
+
+}
+#project{
+    height: 100vh;
+    width: 100vw;
+    padding: 0px 40px;
+    padding-top: 50px;
+    background-color: rgb(213, 213, 213);
+}
+#project section{
+    display: flex;
+}
+#card1{
+    padding: 10px 10px;
+    margin: 10px 20px;
+    background-color: rgb(255, 221, 27);
+    border: none;
+}
+#card2{
+    padding: 10px 10px;
+    margin: 10px 20px;
+    background-color: rgb(255, 221, 27);
+    border: none;
+}
+#card3{
+    padding: 10px 10px;
+    margin: 10px 20px;
+    background-color: rgb(255, 221, 27);
+    border: none;
+}
+#view1{
+    border: 2px solid rgb(0, 0, 0);
+    margin: 10px 10px;
+    border-radius: 20px;
+    padding: 6px 10px;
+    background-color: transparent;
+    color: rgb(0, 0, 0);
+    position: relative;
+    overflow: hidden;
+    transition: all 0.5s;
+}
+#view1:hover{
+    background-color: black;
+    border: 2px solid black;
+    color: whitesmoke;
+}
+#view2{
+    border: 2px solid rgb(0, 0, 0);
+    margin: 10px 10px;
+    border-radius: 20px;
+    padding: 6px 10px;
+    background-color: transparent;
+    color: rgb(0, 0, 0);
+    position: relative;
+    overflow: hidden;
+    transition: all 0.5s;
+}
+#view2:hover{
+    background-color: black;
+    border: 2px solid black;
+    color: whitesmoke;
+}
+#view3{
+    border: 2px solid rgb(0, 0, 0);
+    margin: 10px 10px;
+    border-radius: 20px;
+    padding: 6px 10px;
+    background-color: transparent;
+    color: rgb(0, 0, 0);
+    position: relative;
+    overflow: hidden;
+    transition: all 0.5s;
+}
+#view3:hover{
+    background-color: black;
+    border: 2px solid black;
+    color: whitesmoke;
+}
+#contact{
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(255, 221, 27);
+}
+#submit{
+    border: 2px solid rgb(0, 0, 0);
+    margin: 3px 10px;
+    margin-left: 44%;
+    border-radius: 20px;
+    padding: 6px 10px;
+    background-color: transparent;
+    color: rgb(0, 0, 0);
+    position: relative;
+    overflow: hidden;
+    transition: all 0.5s;
+}
+#submit:hover{
+    background-color: black;
+    border: 2px solid black;
+    color: whitesmoke;
+}
+footer{
+    background-color: rgb(213, 213, 213);
+}
+.portify-ftr{
+    font-size: 2rem;
+}
+.icon{
+    margin-right: 20px;
+}
+#insta{
+    border-radius: 6px;
+}

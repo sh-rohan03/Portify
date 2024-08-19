@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portify</title>
+    <!-- --------favicon---------- -->
+    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+    <link rel="manifest" href="img/site.webmanifest">
+    <link rel="mask-icon" href="img/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <!-- --------fav-end---------- -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Gupter:wght@400;500;700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body style="overflow-x: hidden;">
+    <!-- -----Navbar----- -->
+    <div class="navbar bg-yellow-400 sticky top-0">
+        <div class="navbar-start">
+            <!-- ----------responsive nav------------ -->
+            <div class="dropdown">
+                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h8m-8 6h16" />
+                    </svg>
+                </div>
+                <ul tabindex="0"
+                    class="menu menu-sm dropdown-content bg-yellow-400 rounded-box z-[1] mt-3 w-52 p-2 shadow text-white text-xl">
+                    <li><a href="#Home" class="hover:text-white hover:bg-gray-900">Home</a></li>
+                    <li><a href="#about" class="hover:text-white hover:bg-yellow-400">About me</a> </li>
+                    <li><a href="#Skills" class="hover:text-white hover:bg-gray-900">Skills</a></li>
+                    <li><a href="#exp" class="hover:text-white hover:bg-gray-900">Experience</a></li>
+                    <li><a href="#project" class="hover:text-white hover:bg-gray-900">Projects</a></li>
+                    <li><a href="#contact" class="hover:text-white hover:bg-gray-900">Contact</a></li>
+                </ul>
+            </div>
+            <!-- ---------main nav----------- -->
+            <a href="#Home" class="text-3xl text-black ml-5 font-bold">Portify</a>
+        </div>
+        <div class="navbar-center hidden lg:flex">
+            <ul class="menu menu-horizontal px-1 text-xl text-white font-bold">
+                <li><a href="#Home" class="hover:text-gray-500 hover:bg-yellow-400">Home</a></li>
+                <li><a href="#about" class="hover:text-gray-500 hover:bg-yellow-400">About me</a> </li>
+                <li><a href="#Skills" class="hover:text-gray-500 hover:bg-yellow-400">Skills</a></li>
+                <li><a href="#exp" class="hover:text-gray-500 hover:bg-yellow-400">Experience</a></li>
+                <li><a href="#project" class="hover:text-gray-500 hover:bg-yellow-400">Projects</a></li>
+                <li><a href="#contact" class="hover:text-gray-500 hover:bg-yellow-400">Contact</a></li>
+            </ul>
+        </div>
+        <div class="navbar-end">
+            <a href="https://sh-rohan03.github.io/Portify/" class="btn h-5 w-20 text-white mr-10 border-black"
+                target="_blank">View CV</a>
+        </div>
+    </div>
+
+    <!-- --------Home---------- -->
+    <div id="Home">
+        <div class="left" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
+            <h1>Hi, I'm <span>ROHAN.</span> </h1>
+            <h1>I'm a</h1>
+            <b><span id="element"></span></b>
+            <h2>based in Dhaka, Bangladesh</h2>
+            <button class="btn1">
+                <a href="#project">View My Work</a>
+            </button>
+            <button class="btn2">
+                <a href="#contact">Contact me</a>
+            </button>
+        </div>
+
+        <div class="right" data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine">
+            <div class="div1">
+                <div class="div2">
+                    <img src="img/myphoto.jpeg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- --------About---------- -->
+    <div id="about">
+        <section class="text-black body-font" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+            <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
+                <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
+                    <img id="me2" class="object-cover object-center rounded" alt="hero" src="img/my-photo2.jpg">
+                </div>
+                <div
+                    class="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
+                    <div class="line"></div>
+                    <h1 class="abt">Know Me More</h1>
+                    <h1 class="title-font sm:text-4xl text-3xl mb-4 font-normal text-gray-900">I'm <span
+                            class="font-bold">Sakibul Hasan Rohan</span>,
+                        <br class="hidden lg:inline-block">I'm a Developer
+                    </h1>
+                    <p class="mb-8 leading-relaxed">I'm a designer & developer with a passion for web design. I enjoy
+                        developing simple, clean and slick websites that provide real value to the end user.</p>
+                    <div id="details" class="flex justify-center">
+                        <div class="mail">
+                            <div class="mail-icon flex justify-center">
+                                <i class="fa-regular fa-envelope"></i>
+                                <p>E-Mail</p>
+                            </div>
+                            <hr>
+                            <p>sakibulrohan196@gmail.com</p>
+                        </div>
+                        <div class="dob">
+                            <div class="dob-icon flex justify-center">
+                                <i class="fa-regular fa-calendar-days"></i>
+                                <p>Date Of Birth</p>
+                            </div>
+                            <hr>
+                            <p>3rd November, 2004</p>
+                        </div>
+                        <div class="address">
+                            <div class="address-icon flex justify-center">
+                                <i class="fa-solid fa-location-dot"></i>
+                                <p>Address</p>
+                            </div>
+                            <hr>
+                            <p>Kushtia, Dhaka, Bangladesh</p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <!-- --------skills---------- -->
+    <div id="Skills">
+        <section data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+            <div class="text">
+                <h1>Skills</h1>
+
+                <p>Highlight My Expertise in</p>
+            </div>
+            <div class="bar">
+                <div class="html5">
+                    <div class="max-w-lg bg-gray-200 rounded-full dark:bg-yellow-500">
+                        <div class="bg-black text-xs font-medium text-blue-100 text-center p-0.5 leading- rounded-full"
+                            style="width: 60%">HTML5 60%</div>
+                    </div>
+                </div>
+                <div class="css3">
+                    <div class="max-w-lg bg-gray-200 rounded-full dark:bg-yellow-500">
+                        <div class="bg-black text-xs font-medium text-blue-100 text-center p-0.5 leading-relaxed rounded-full"
+                            style="width: 45%">CSS 45%</div>
+                    </div>
+                </div>
+                <div class="tailwind">
+                    <div class="max-w-lg bg-gray-200 rounded-full dark:bg-yellow-500">
+                        <div class="bg-black text-xs font-medium text-blue-100 text-center p-0.5 leading-relaxed rounded-full"
+                            style="width: 70%">Tailwind Css 70%</div>
+                    </div>
+                </div>
+                <div class="tailwind">
+                    <div class="max-w-lg bg-gray-200 rounded-full dark:bg-yellow-500">
+                        <div class="bg-black text-xs font-medium text-blue-100 text-center p-0.5 leading-relaxed rounded-full"
+                            style="width: 60%">Bootstrap 60%</div>
+                    </div>
+                </div>
+                <div class="ms-office">
+                    <div class="max-w-lg bg-gray-200 rounded-full dark:bg-yellow-500">
+                        <div class="bg-black text-xs font-medium text-blue-100 text-center p-0.5 leading-relaxed rounded-full"
+                            style="width: 80%">MS Word 80%</div>
+                    </div>
+                </div>
+                <div class="ms-office">
+                    <div class="max-w-lg bg-gray-200 rounded-full dark:bg-yellow-500">
+                        <div class="bg-black text-xs font-medium text-blue-100 text-center p-0.5 leading-relaxed rounded-full"
+                            style="width: 55%">MS Power Point 55%</div>
+                    </div>
+                </div>
+
+
+            </div>
+        </section>
+    </div>
+    <!-- --------experience---------- -->
+    <div id="exp">
+        <section data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+            <div class="text2">
+                <p>Highlight My key Experiences</p>
+                <h1> My Experience</h1>
+            </div>
+            <div class="exp-details">
+                <p>(2024-Present)</p>
+                <h1>Forntend Developer:</h1>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus eum nisi sunt at corporis minus
+                    voluptatum placeat natus ratione velit <br> aut doloribus deleniti neque accusamus ex,
+                    exercitationem ipsa
+                    sapiente dolorem repudiandae praesentium, maiores consequatur cum nulla vitae! Eum non quo eos
+                    voluptates beatae fugit, laudantium corrupti enim, pariatur, vel nobis?</p>
+            </div>
+        </section>
+    </div>
+    <!-- --------project---------- -->
+    <div id="project">
+        <section data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+
+
+            <div id="card1"
+                class="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+                <a href="#" class="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300">
+                    <img class="rounded-t-lg" src="/img/project.jpg" alt="" />
+                </a>
+                <div class="p-5">
+                    <a href="#">
+                        <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-black">FOODIGY</h5>
+                    </a>
+                    <p class="mb-3 font-normal text-black dark:text-black"> This is a Fast Food Restaurent Website. </p>
+                    <a id="view1" href="https://sh-rohan03.github.io/FOODIGY-/" target="_blank"
+                        class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                        View
+                        <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M1 5h12m0 0L9 1m4 4L9 9" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
+            <div id="card2"
+                class="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+                <a href="#">
+                    <img class="rounded-t-lg" src="/img/project.jpg" alt="" />
+                </a>
+                <div class="p-5">
+                    <a href="#">
+                        <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-black">FOODIGY</h5>
+                    </a>
+                    <p class="mb-3 font-normal text-gray-700 dark:text-black"> This is a Fast Food Restaurent Website.
+                    </p>
+                    <a id="view2" href="https://sh-rohan03.github.io/FOODIGY-/" target="_blank"
+                        class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                        View
+                        <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M1 5h12m0 0L9 1m4 4L9 9" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
+            <div id="card3"
+                class="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+                <a href="#">
+                    <img class="rounded-t-lg" src="/img/project.jpg" alt="" />
+                </a>
+                <div class="p-5">
+                    <a href="#">
+                        <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-black">FOODIGY</h5>
+                    </a>
+                    <p class="mb-3 font-normal text-gray-700 dark:text-black"> This is a Fast Food Restaurent Website.
+                    </p>
+                    <a id="view3" href="https://sh-rohan03.github.io/FOODIGY-/" target="_blank"
+                        class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                        View
+                        <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M1 5h12m0 0L9 1m4 4L9 9" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
+
+
+        </section>
+
+    </div>
+    <!-- --------contact---------- -->
+    <div id="contact">
+        <section class="text-gray-600 body-font relative" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+            <div class="container px-5 py-24 mx-auto">
+                <div class="flex flex-col text-center w-full mb-12">
+                    <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-black">Contact Us</h1>
+                </div>
+                <div class="lg:w-1/2 md:w-2/3 mx-auto">
+                    <div class="flex flex-wrap -m-2">
+                        <div class="p-2 w-1/2">
+                            <div class="relative">
+                                <label for="name" class="leading-7 text-sm text-black">Name</label>
+                                <input type="text" id="name" name="name"
+                                    class="w-full bg-gray-100 bg-opacity-50 rounded border border-black focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                            </div>
+                        </div>
+                        <div class="p-2 w-1/2">
+                            <div class="relative">
+                                <label for="email" class="leading-7 text-sm text-black">Email</label>
+                                <input type="email" id="email" name="email"
+                                    class="w-full bg-gray-100 bg-opacity-50 rounded border border-black focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                            </div>
+                        </div>
+                        <div class="p-2 w-full">
+                            <div class="relative">
+                                <label for="message" class="leading-7 text-sm text-black">Message</label>
+                                <textarea id="message" name="message"
+                                    class="w-full bg-gray-100 bg-opacity-50 rounded border border-black focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"></textarea>
+                            </div>
+                        </div>
+                        <div class="p-2 w-full">
+                            <button id="submit"
+                                class="flex mx-auto text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg ">Button</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <!-- --------footer---------- -->
+    <footer id="footer" class="text-gray-600 body-font">
+        <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
+            <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
+                <span class="ml-3 text-2xl portify-ftr">Portify</span>
+            </a>
+            <p class="text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4">©
+                2024 Portify —
+                <a href="https://twitter.com/knyttneve" class="text-gray-600 ml-1" rel="noopener noreferrer"
+                    target="_blank">@Sakibul Hasan Rohan</a>
+            </p>
+
+            <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start icon">
+                <a href="https://www.facebook.com/rupkhthar.rajkumar/" target="_blank" class="text-blue-500">
+                    <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        class="w-5 h-5" viewBox="0 0 24 24">
+                        <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                    </svg>
+                </a>
+                <a href="https://x.com/rohan_2_zz" target="_blank" class="ml-3 text-blue-600">
+                    <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        class="w-5 h-5" viewBox="0 0 24 24">
+                        <path
+                            d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z">
+                        </path>
+                    </svg>
+                </a>
+                <a href="https://www.instagram.com/sh_rohan75/" target="_blank" id="insta"
+                    class="ml-3 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500">
+                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                        stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                        <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                        <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+                    </svg>
+                </a>
+                <a href="https://www.linkedin.com/in/sakibul-hasan-rohan-720987318?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                    target="_blank" class="ml-3 text-blue-800">
+                    <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                        stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
+                        <path stroke="none"
+                            d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z">
+                        </path>
+                        <circle cx="4" cy="4" r="2" stroke="none"></circle>
+                    </svg>
+                </a>
+            </span>
+        </div>
+    </footer>
+
+
+
+    <!-- -----Script----- -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Web Developer', 'Web Designer', 'Wordpress Specialist', 'Web Developer', 'Web Designer', 'Wordpress Specialist', 'Web Developer', 'Web Designer', 'Wordpress Specialist', 'Web Developer', 'Web Designer', 'Wordpress Specialist', 'Web Developer', 'Web Designer', 'Wordpress Specialist', 'Web Developer', 'Web Designer', 'Wordpress Specialist', 'Web Developer', 'Web Designer', 'Wordpress Specialist', 'Web Developer', 'Web Designer', 'Wordpress Specialist', 'Web Developer', 'Web Designer', 'Wordpress Specialist', 'Web Developer', 'Web Designer', 'Wordpress Specialist', 'Web Developer', 'Web Designer', 'Wordpress Specialist', 'Web Developer', 'Web Designer', 'Wordpress Specialist', 'Web Developer', 'Web Designer', 'Wordpress Specialist', 'Web Developer', 'Web Designer', 'Wordpress Specialist', 'Web Developer', 'Web Designer', 'Wordpress Specialist', 'Web Developer', 'Web Designer', 'Wordpress Specialist', 'Web Developer', 'Web Designer', 'Wordpress Specialist', 'Web Developer', 'Web Designer', 'Wordpress Specialist', 'Web Developer', 'Web Designer', 'Wordpress Specialist', 'Web Developer', 'Web Designer', 'Wordpress Specialist', 'Web Developer', 'Web Designer', 'Wordpress Specialist', 'Web Developer', 'Web Designer', 'Wordpress Specialist', 'Web Developer', 'Web Designer', 'Wordpress Specialist', 'Web Developer', 'Web Designer', 'Wordpress Specialist', 'Web Developer', 'Web Designer', 'Wordpress Specialist', 'Web Developer', 'Web Designer', 'Wordpress Specialist', 'Web Developer', 'Web Designer', 'Wordpress Specialist',],
+            typeSpeed: 50,
+        });
+    </script>
+</body>
+
+</html>
